@@ -30,7 +30,7 @@ const SortableItem: React.FC<SortableItemProps> = ({
       ref={setNodeRef}
       style={style}
       {...attributes}
-      className="flex items-center justify-between bg-gray-700 p-3 mb-2 rounded"
+      className="grid grid-cols-[1fr,auto] gap-5 w-full bg-gray-700 p-3 mb-2 rounded"
     >
       <div className="flex items-center">
         <span {...listeners}>
@@ -43,15 +43,15 @@ const SortableItem: React.FC<SortableItemProps> = ({
       <div>
         <button
           onClick={onEdit}
-          className="text-yellow-500 hover:text-yellow-700 mr-2"
+          className="text-yellow-500  hover:text-yellow-700 mr-2"
         >
-          <Edit size={20} />
+          <Edit size={24} />
         </button>
         <button
           onClick={onRemove}
           className="text-[#fe1c34] hover:text-red-700"
         >
-          <Trash2 size={20} />
+          <Trash2 size={24} />
         </button>
       </div>
     </li>

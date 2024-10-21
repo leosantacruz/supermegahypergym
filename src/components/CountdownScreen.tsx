@@ -87,10 +87,10 @@ const CountdownScreen: React.FC<CountdownScreenProps> = ({
         </div>
       ) : (
         <>
-          <h2 className="text-2xl font-semibold mb-4">
+          <h2 className="text-4xl font-semibold my-4">
             {exercises[currentExerciseIndex].name}
           </h2>
-          <div className="relative w-64 h-64 mx-auto mb-6">
+          <div className="relative w-64 h-64 mx-auto my-16">
             <svg className="w-full h-full" viewBox="0 0 100 100">
               <circle
                 className="text-[#fe1c34]/20 stroke-current"
