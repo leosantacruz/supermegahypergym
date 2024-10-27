@@ -87,6 +87,7 @@ const AdminScreen: React.FC<AdminScreenProps> = ({
   };
 
   const handleDragEnd = (event: any) => {
+    console.log("is dragging");
     const { active, over } = event;
 
     if (active.id !== over.id) {
